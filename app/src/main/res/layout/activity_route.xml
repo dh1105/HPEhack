@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Route">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/start"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:ems="10"
+            android:hint="Starting location"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/destination"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/start"
+            android:layout_alignStart="@+id/start"
+            android:layout_below="@+id/start"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Destination"/>
+
+        <Button
+            android:id="@+id/safe_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/destination"
+            android:layout_marginBottom="20dp"
+            android:layout_alignLeft="@+id/destination"
+            android:layout_alignRight="@+id/destination"
+            android:text="Find the safest route" />
+
+    </RelativeLayout>
+
+</ScrollView>
